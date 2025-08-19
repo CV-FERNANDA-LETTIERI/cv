@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum - María Fernanda Lettieri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: #f3f0f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #5e2b97, #9c27b0);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    h2 {
+      color: #5e2b97;
+      border-left: 6px solid #e91e63;
+      padding-left: 0.7rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      background: #fff;
+      padding: 1.5rem;
+      margin: 1.2rem auto;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      max-width: 900px;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #5e2b97;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .btn-custom {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+    }
+    .btn-custom:hover {
+      background-color: #c2185b;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="cv-content">
+    <header>
+      <h1>María Fernanda Lettieri</h1>
+      <p>Profesora en Discapacitados Mentales y Motores</p>
+      <img src="fernanda.jpg" alt="Foto de María Fernanda Lettieri">
+      <br>
+      <button class="btn btn-custom mt-3" onclick="generatePDF()">
+        <i class="fas fa-file-pdf"></i> Descargar CV en PDF
+      </button>
+    </header>
+
+    <section>
+      <h2><i class="fas fa-user"></i> Datos Personales</h2>
+      <p><strong>Nombre:</strong> María Fernanda Lettieri</p>
+      <p><strong>Fecha de nacimiento:</strong> 28 de Julio de 1985</p>
+      <p><strong>DNI:</strong> 31.249.496</p>
+      <p><strong>Domicilio:</strong> Maipú 873 5°E</p>
+      <p><strong>Teléfono:</strong> (0383) 154005224</p>
+      <p><strong>Email:</strong> ferlettieri1985@gmail.com</p>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+      <ul>
+        <li>Colegio Privado “Juan Cayetano Bianchi” Saujil Dpto. Pomán (2003)</li>
+        <li>Profesora en Discapacitados Mentales y Motores – I.E.S. “Prof. Juan Manuel Chavarría” (2010)</li>
+        <li>Posgrado Pedagogía de la Diversidad – Actualización académica hacia la inclusión educativa de estudiantes con discapacidad – UNCA (2013)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-book"></i> Cursos Realizados</h2>
+      <ul>
+        <li>Jornada Taller Internacional “Educación inclusiva en el Marco de la Diversidad” – Ministerio de Educación, Cultura, Ciencia y Tecnología de Catamarca</li>
+        <li>“Primer Encuentro de Prensa y Turismo” – Secretaría de Turismo de Catamarca, 4 y 5 de Mayo 2007</li>
+        <li>“1º Foro de Economía Social y Solidaria” – Región ATACALAR, Septiembre 2007</li>
+        <li>Curso Taller de Estimulación y Desarrollo Infantil – I.E.S. “Prof. Juan Manuel Chavarría” (2008)</li>
+        <li>Curso Taller de Articulación de Nivel Inicial con la Escuela Primaria – I.P.A.P. (2010)</li>
+        <li>I Jornada de Actualización en Trastornos Generalizados del Desarrollo y Autismo – Santiago del Estero (2011)</li>
+        <li>Planificación basada en la persona, un abordaje para el educando con discapacidades múltiples – Ministerio de Educación Catamarca (2012)</li>
+        <li>El equipo escolar en los procesos de integración educativa – Ministerio de Educación Catamarca (2012)</li>
+        <li>Jornadas de Prevención por el Abuso de Sustancias – Ministerio de Educación Catamarca (2014)</li>
+        <li>XII Jornadas Científicas – Trastornos de Personalidad y Adicciones (2015)</li>
+        <li>2° Congreso Nacional e Internacional NOA – “Trata de Personas” (2016)</li>
+        <li>II Simposio Internacional de Educación Inclusiva – Buenos Aires (2013)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+      <ul>
+        <li>Recepción y atención al turista – Casa ATACALAR, Gobierno de Catamarca</li>
+        <li>Servicio Administrativo – Secretaría de Coordinación Regional, Gobierno de Catamarca</li>
+        <li>Maestra de Grado Suplente – Colegio F.A.S.T.A. Catamarca</li>
+        <li>Profesora Orientadora en Sala de Estimulación Temprana – Instituto de Rehabilitación Integral (2009–2012)</li>
+        <li>Coordinadora Terapéutica – I.R.I. Catamarca (2009–2012)</li>
+        <li>Secretaria – ONG A.P.Y.Fa.Di.M.</li>
+        <li>Prof. Integradora, Nivel Primario – Escuela Municipal N°1 El Principito (2011)</li>
+        <li>Coordinadora – C.A.I. (Centro de Actividades Infantiles) Escuela N°126</li>
+        <li>Maestra de Recuperación de grado lento – Escuela N°701 Clara J. Armstrong (2012–2013)</li>
+        <li>Maestra de grupo – Escuela Especial N°8 “Quiero Ser Feliz” (2014)</li>
+        <li>Profesora de cátedra Pedagogía Terapéutica – I.E.S. Prof. Juan M. Chavarría (2012)</li>
+        <li>Profesora de cátedra Abordaje Interdisciplinario – I.E.S. Prof. Juan M. Chavarría (2013–actualidad)</li>
+        <li>Profesora de cátedra Problemática de la Integración e Inclusión Educativa – I.E.S. Prof. Juan M. Chavarría (2013–actualidad)</li>
+        <li>Jurado en Feria Provincial de Educación, Ciencia y Tecnología (2015)</li>
+        <li>Maestra de grupo – Instituto Privado APANE</li>
+        <li>Maestra de Apoyo a la Integración – Colegio de Carmen y San José</li>
+        <li>Integrante del DOE – Colegio de Carmen y San José</li>
+        <li>Tutora Suplente – Colegio de Carmen y San José (Nivel Secundario)</li>
+        <li>Disertante – Jornada Taller en Integración Escolar, Colegio Virgen Niña</li>
+        <li>Integrante del Equipo Técnico de Inclusión Educativa – Dirección Provincial de Educación Especial</li>
+        <li>Integrante del equipo de orientación colegio del Carmen y san José (2017) </li>
+        <li>Equipo de orientación escolar escuelas preuniversitaria fray Mamerto Esquiú 2019 hasta la actualidad</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 María Fernanda Lettieri - Disponible para nuevas oportunidades profesionales.</p>
+    </footer>
+  </div>
+
+  <script>
+    function generatePDF() {
+      const element = document.getElementById('cv-content');
+      const opt = {
+        margin: 0.5,
+        filename: 'CV_Maria_Fernanda_Lettieri.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().from(element).set(opt).save();
+    }
+  </script>
+</body>
+</html>
